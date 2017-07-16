@@ -1,20 +1,17 @@
-\documentclass[10pt]{article}
+\documentclass[9pt]{article}
 
 \usepackage[parfill]{parskip}
 
+%------No Page Nums---
+\pagenumbering{gobble}
 %------Dimensions-----
-\topmargin=0.0in %+1in enforced
-\oddsidemargin=0.0in
-\evensidemargin=0.0in
-\textwidth=6.5in
-\marginparwidth=0.5in
-\headheight=0pt
-\headsep=0pt
-\textheight=10.0in
+\usepackage[top=0.5in,left=0.25in,right=0.25in,bottom=0.5in]{geometry}
+
+\parskip 0pt
 
 \begin{document}
   \centerline{
-    Douglas J. Smith
+    \LARGE\textbf{Douglas J. Smith}
   }
   \centerline{
     School: 326 Stanford Hall, Notre Dame, IN 46556
@@ -25,7 +22,10 @@
     Home: 292 Krepp Rd, Cooperstown, PA 16317
   }
 
+  \vspace{-16pt}
   \section*{Education}
+    \vspace{-16pt}
+    \line(1,0){580}\\
     University of Notre Dame
     \hfill
     2015-2019
@@ -34,7 +34,11 @@
     \hfill
     GPA 3.44
     \\
+    %Need the above to format that line, so the below is longer than normal. 
+  \vspace{-28pt}
   \section*{Related Experience}
+    \vspace{-16pt}
+    \line(1,0){580}\\
     \textbf{Google, Inc.}
     \hfill
     Pittsburgh, PA
@@ -43,11 +47,12 @@
     \\
     \textit{Engineering Practicum Intern}
     \begin{itemize}
-      \item Implemented system for comparison of factual/counterfactual experiments.
-      \item Designed user interface for summarizing and querying test data. 
+      \item Built full stack web application for comparing the results of factual and counterfactual experiments testing Ad serving models.
+      \item Implemented system for comparison of factual/counterfactual experiments as a C++ binary that performs a series of tests to differentiate experimental results.
+      \item Designed user interface for summarizing and querying test data, then built using Angular2 following the Google Material design specification.
     \end{itemize}
   
-    \textbf{Crcl}
+    textbf{Crcl}
     \hfill
     Notre Dame, IN
     \hfill
@@ -69,9 +74,9 @@
     \\
     \textit{Student Researcher for Dr. Ronald Metoyer}
     \begin{itemize}
-      \item Organized materials for a survey paper on data visualizations in sporting statistics.
       \item Wrote python script for creating D3-readable JSON from survey data.
       \item Constructed HCI lab website using AngularJS and BootstrapCSS.
+      \item Building Swift iOS applications focused on utilizing two device cameras simultaneously.
     \end{itemize}
     
     \textbf{Arrix Family Mobile Development Lab}
@@ -82,7 +87,7 @@
     \\
     \textit{Software Developer}
     \begin{itemize}
-      \item Originating, designing, and developing applications for student use at the university in conjunction with OIT and the Athletics Department.
+      \item Originating, designing, and developing applications for student use at the university in conjunction with OIT and the Athletics Department. Building application with Django backend and ReactJS frontend.
     \end{itemize}
     
     \textbf{Notre Dame Department of Theatre}
@@ -93,8 +98,8 @@
     \\
     \textit{Database Admin/Teaching Assistant}
     \begin{itemize}
-      \item Created PHP script for managing student work scheduling.
-      \item Oversaw hosting/database management for scheduling website.
+      \item Created site for managing student work scheduling using a PHP script interacting with a PostgreSQL database.
+      \item Oversaw hosting/database management for scheduling website using first Heroku and then a private server.
     \end{itemize}
     
     \textbf{National Tsing Hua University}
@@ -105,7 +110,7 @@
     \\
     \textit{Researcher}
     \begin{itemize}
-      \item Designed system for dynamically testing circuits and fault lists for identical faults.
+      \item Designed system for dynamically testing circuits and fault lists for identical faults with a C++ binary that decomposed fault descriptions to test for equivalent outputs.
       \item Refactored ABC circuit modeling library to function with C/C++ executables, optimizing for modeling purposes.
     \end{itemize}
     
@@ -148,10 +153,20 @@
     \end{itemize}
  
 
+  \vspace{-16pt}
   \section*{Projects}
+    \vspace{-16pt}
+    \line(1,0){580}\\
     \textbf{Chromex} - Command line utility for interacting with google applications from the omnibox of any extensible chromium-based browser.
+    \\
+    \textbf{ServeLite} - Exercise in creating a high-performing server that issmall in size and recomilable for different features.
+    \\
+    \textbf{Jeeves} - Multiplatform application that presents a series of customizable sub-applications built in Ionic framework.
 
+  \vspace{-16pt}
   \section*{Leadership/Activities}
+    \vspace{-16pt}
+    \line(1,0){580}\\
     \textit{Band of the Fighting Irish}
     -
     Marching Alto Saxophone, Varsity Hockey/Basketball Band
@@ -163,7 +178,11 @@
     \textit{Linux User Group}
     -
     Web development team
+    
+  \vspace{-16pt}
   \section*{Skills}
+    \vspace{-16pt}
+    \line(1,0){580}\\
     \textbf{Skills}
     Software Engineering,
     Full Stack Development,
